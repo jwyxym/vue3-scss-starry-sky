@@ -1,24 +1,18 @@
 <template>
 	<div class="starry-sky" aria-hidden="true">
-		<div v-for="_ in layers" :key="_">
-			<div v-for="tile in tiles" :key="tile" />
+		<div v-for="_ in new Array(5)" :key="_">
+			<div v-for="tile in new Array(3)" :key="tile" />
 		</div>
 	</div>
 </template>
-
-<script setup lang="ts">
-const layers = [1, 2, 3, 4, 5];
-const tiles = [1, 2, 3];
-</script>
-
 <style scoped lang="scss">
 @use "sass:math";
 
 @function star($n) {
-	$result: #{math.random(100)}vw #{math.random(100)}vh 0 #fff;
+	$result: #{math.random(100)}vw #{math.random(100)}vh 1px #fff;
 
 	@for $i from 2 through $n {
-		$result: #{$result}, #{math.random(100)}vw #{math.random(100)}vh 0 #fff;
+		$result: #{$result}, #{math.random(100)}vw #{math.random(100)}vh 1px #fff;
 	}
 
 	@return $result;
