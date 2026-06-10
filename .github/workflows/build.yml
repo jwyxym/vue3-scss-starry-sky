@@ -26,7 +26,7 @@ jobs:
     - name: Build package
       run: |
         npm pack
-        mv *.tgz vue3-scss-starry-sky
+        mv *.tgz vue3-scss-starry-sky.tgz
         
     - name: Upload
       uses: actions/upload-artifact@v4
