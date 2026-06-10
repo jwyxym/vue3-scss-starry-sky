@@ -1,6 +1,6 @@
 <template>
 	<div class="starry-sky" aria-hidden="true">
-		<div v-for="_ in new Array(5)" :key="_">
+		<div v-for="_ in new Array(3)" :key="_">
 			<div v-for="tile in new Array(3)" :key="tile" />
 		</div>
 	</div>
@@ -30,10 +30,10 @@
 	overflow: hidden;
 	position: fixed;
 
-	$time: 400s;
-	$count: 1000;
+	$time: 100s;
+	$count: 600;
 
-	@for $nth from 1 through 5 {
+	@for $nth from 1 through 3 {
 		$time: math.floor(math.div($time, 2));
 		$count: math.floor(math.div($count, 2));
 
