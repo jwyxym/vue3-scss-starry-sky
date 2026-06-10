@@ -1,6 +1,6 @@
 {
   "name": "vue3-scss-starry-sky",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "private": false,
   "type": "module",
   "main": "./dist/vue3-scss-starry-sky.umd.cjs",
